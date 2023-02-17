@@ -60,6 +60,8 @@ body {
 }
 
 .download-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: white;
   border: none;
   color: #4472C4;
