@@ -145,5 +145,9 @@ body {
     .right-column {
         padding-top: 0;
     }
+
+    .job, .formation {
+        display: block;
+    }
 }
 
