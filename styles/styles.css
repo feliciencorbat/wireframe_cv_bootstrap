@@ -110,6 +110,7 @@ body {
         display: block;
         background-color: white;
         color: black;
+        padding-bottom: 0;
     }
 
     .left-column h3 {
@@ -137,6 +138,10 @@ body {
     .download-button:hover {
         background-color: #4CAF50;
         color: white;
+    }
+
+    .right-column {
+        padding-top: 0;
     }
 }
 
