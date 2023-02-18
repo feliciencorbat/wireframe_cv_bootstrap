@@ -149,5 +149,17 @@ body {
     .job, .formation {
         display: block;
     }
+
+    .section-profile {
+        display: none;
+    }
+
+    .section-languages {
+        display: none;
+    }
+
+    .section-hobbies {
+        display: none;
+    }
 }
 
