@@ -52,6 +52,7 @@ body {
 
 .contact {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .bi {
@@ -78,6 +79,7 @@ body {
 
 .job, .formation {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .job-year, .formation-year {
