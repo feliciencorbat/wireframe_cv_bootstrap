@@ -6,7 +6,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "left-column right-column";
-    width: 1200px;
+    width: 1000px;
     box-shadow: 10px 5px 5px 5px rgba(0,0,0,0.12);
     margin: auto;
   }
@@ -45,7 +45,10 @@ body {
     color: #4472C4;
     padding: 15px 32px;
     font-size: 16px;
+    border-radius: 10px;
 }
+
+
 
 .download-button:hover {
     background-color: #4CAF50;
@@ -96,3 +99,46 @@ body {
   top: 100%;
   position: absolute
 }
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: block;
+        width: 100%;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .left-column{
+        display: block;
+        background-color: white;
+        color: black;
+    }
+
+    .left-column h3 {
+        color: #4472C4;
+    }
+
+    .left-column a {
+        color: black;
+    }
+
+    h1, h2 {
+        color: #4472C4;
+    }
+
+    .download-button {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        background-color: #4472C4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+
+    .download-button:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+}
+
