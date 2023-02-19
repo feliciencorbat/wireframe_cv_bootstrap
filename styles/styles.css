@@ -6,7 +6,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "left-column right-column";
-    width: 1000px;
+    width: 1100px;
     box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.12);
     margin: auto;
 }
@@ -100,7 +100,27 @@ body {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 850px) {
+    .container {
+        width: 800px;
+    }
+
+    .birthdate {
+        display: none;
+    }
+
+    .job, .formation {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 850px) {
     .container {
         display: block;
         width: 100%;
