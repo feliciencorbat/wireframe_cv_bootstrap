@@ -8,4 +8,6 @@ Télécharger le wireframe en format SVG: [télécharger](https://feliciencorbat
 
 ## CV
 
+Icônes de Bootstrap (format HTML) utilisées: [Icônes Bootstrap](https://icons.getbootstrap.com/)
+
 Visualiser le CV: [visualiser](https://feliciencorbat.github.io/wireframe_cv)
