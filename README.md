@@ -8,4 +8,4 @@ Télécharger le wireframe en format SVG: [télécharger](https://feliciencorbat
 
 ## CV
 
-Visualiser le CV: [visualiser](https://feliciencorbat.github.io/wireframe_cv/cv.html)
+Visualiser le CV: [visualiser](https://feliciencorbat.github.io/wireframe_cv)
