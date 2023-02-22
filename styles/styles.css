@@ -33,6 +33,10 @@ h2, h3, a {
     color: #4472C4;
 }
 
+a:hover {
+    color: #4CAF50;
+}
+
 .download-button {
     margin-top: 15px;
     margin-bottom: 40px;
@@ -71,6 +75,7 @@ p {
     margin-block-end: 0.5em;
 }
 
+/* center column with blue line */
 .center-column {
     grid-area: center-column;
     background-image: url("./line.svg");
