@@ -5,10 +5,10 @@ body {
 /* Container with 2 columns (left with 1 fraction and right with 2 fractions) */
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "left-column right-column";
+    grid-template-columns: 1fr 40px 2fr;
+    grid-template-areas: "left-column center-column right-column";
     width: 1100px;
-    box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.12);
     margin: auto;
 }
 
@@ -27,20 +27,18 @@ body {
 .left-column {
     grid-area: left-column;
     padding: 20px;
-    background-color: #4472C4;
-    color: white;
 }
 
-.left-column a {
-    color: white;
+h2, h3, a {
+    color: #4472C4;
 }
 
 .download-button {
     margin-top: 15px;
     margin-bottom: 40px;
-    background-color: white;
+    background-color: #4472C4;
     border: none;
-    color: #4472C4;
+    color: white;
     padding: 15px 32px;
     font-size: 16px;
     border-radius: 10px;
@@ -68,9 +66,15 @@ body {
 }
 
 /* paragraph with smaller margins */
-p .profile, p .languages {
+p {
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
+}
+
+.center-column {
+    grid-area: center-column;
+    background-image: url("./line.svg");
+    background-repeat: repeat;
 }
 
 .right-column {
@@ -146,37 +150,7 @@ p .profile, p .languages {
     /* Left column in block instead grid and white background */
     .left-column {
         display: block;
-        background-color: white;
-        color: black;
         padding-bottom: 0;
-    }
-
-    .left-column h3 {
-        color: #4472C4;
-    }
-
-    .left-column a {
-        color: black;
-    }
-
-    h1, h2 {
-        color: #4472C4;
-    }
-
-    /* Change color of download button because left column background is white */
-    .download-button {
-        margin-top: 15px;
-        margin-bottom: 40px;
-        background-color: #4472C4;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        font-size: 16px;
-    }
-
-    .download-button:hover {
-        background-color: #4CAF50;
-        color: white;
     }
 
     .right-column {
