@@ -1,185 +1,32 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Container with 2 columns (left with 1 fraction and right with 2 fractions) */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 80px 2fr;
-    grid-template-areas: "left-column center-column right-column";
-    width: 1100px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.12);
-    margin: auto;
-}
-
-.profile-photo {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    border-radius: 30px;
-}
-
-.margin-bottom-20 {
-    margin-bottom: 20px;
-}
-
-/* Left column with blue background */
-.left-column {
-    grid-area: left-column;
-    padding: 20px;
-}
-
-h2, h3, a {
+.text-color-blue {
     color: #4472C4;
 }
 
-a:hover {
+.text-color-green:hover {
     color: #4CAF50;
 }
 
-.download-button {
-    margin-top: 15px;
-    margin-bottom: 40px;
+.background-color-blue {
     background-color: #4472C4;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    font-size: 16px;
-    border-radius: 10px;
 }
 
-
-.download-button:hover {
+.background-color-green:hover {
     background-color: #4CAF50;
-    color: white;
 }
 
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* SVG icons for contacts with fix size on the left */
-.bi {
-    flex-basis: 30px;
-}
-
-/* contacts infos on the right of SVG icons */
-.contact-infos {
-    margin-bottom: 20px;
-}
-
-/* paragraph with smaller margins */
-p {
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-}
-
-/* center column with blue line */
-.center-column {
-    grid-area: center-column;
+.blue-line {
     background-image: url("./line.svg");
     background-repeat: no-repeat;
 }
 
-.right-column {
-    grid-area: right-column;
-    padding: 20px;
+h1 {
+    font-size: 2em;
 }
 
-.right-column h2 {
-    color: #4472C4;
+h2 {
+    font-size: 1.5em;
 }
 
-.job, .formation {
-    display: flex;
-    flex-wrap: wrap;
+h3 {
+    font-size: 1.17em;
 }
-
-/* Job year or formation year with fix size on the left */
-.job-year, .formation-year {
-    flex-basis: 120px;
-    color: #4472C4;
-    font-weight: 600;
-}
-
-/* Job infos or formation infos on the right of job year or formation year */
-.job-infos, .formation-infos {
-    font-weight: 600;
-}
-
-/* left gap for job or formation on the left */
-.job-gap, .formation-gap {
-    flex-basis: 120px;
-}
-
-/* Job complement or formation complement on the right of gap */
-.job-comp, .formation-comp {
-    margin-bottom: 20px;
-}
-
-/* Screen beetween 1200px and 1100px */
-@media screen and (max-width: 1200px) {
-    .container {
-        width: 1000px;
-    }
-}
-
-/* Screen between 1100 px and 850 */
-@media screen and (max-width: 1100px) and (min-width: 850px) {
-    .container {
-        width: 800px;
-    }
-
-    /* Remove birthdate text because left column is thin */
-    .birthdate {
-        display: none;
-    }
-
-    /* Jobs and formations in block instead flex */
-    .job, .formation {
-        display: block;
-    }
-}
-
-/* Screen less than 850px */
-@media screen and (max-width: 850px) {
-    /* Container in block instead grid */
-    .container {
-        display: block;
-        width: 100%;
-        box-shadow: none;
-        margin: 0;
-    }
-
-    /* Left column in block instead grid and white background */
-    .left-column {
-        display: block;
-        padding-bottom: 0;
-    }
-
-    .right-column {
-        padding-top: 0;
-    }
-    
-    /* Jobs and formation in block instead flex */
-    .job, .formation {
-        display: block;
-    }
-
-    /* Remove profile (soft skills) section */
-    .section-profile {
-        display: none;
-    }
-
-    /* Remove languages section */
-    .section-languages {
-        display: none;
-    }
-
-    /* Remove hobbies section */
-    .section-hobbies {
-        display: none;
-    }
-}
-
