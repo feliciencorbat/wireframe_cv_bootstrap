@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-<div class="container border border-1 mt-4 mb-4">
+<div class="container-lg border border-1 mt-lg-4 mb-lg-4">
 
     <div class="row m-5">
 
         <!-- Left Column with blue background-->
-        <div class="col-3 p-0">
+        <div class="col-md-4 col-sm-12">
 
             <!-- Profile photo -->
             <img alt="profile-photo" class="img-fluid rounded-3" src="./styles/profile-photo.jpg">
-            <h1>Développeuse web</h1>
+            <h1 class="mt-3">Développeuse web</h1>
 
             <!-- Contact section with name, button download cv, e-mail, telephone, address, residence permit, birthdate -->
 
@@ -77,11 +77,12 @@
                         <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
                         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                     </svg>
-                    <div class="col-10 mt-3">Date de naissance: 22.01.1979</div>
+                    <div class="col-10 mt-3 mb-4">Date de naissance: 22.01.1979</div>
                 </div>
 
             <!-- Profile section (= soft skills) -->
-                <h3 class="mt-4 text-color-blue">Profil</h3>
+            <div class="d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                <h3 class="text-color-blue">Profil</h3>
                 <div>Active</div>
                 <div>Attentive</div>
                 <div>A l'écoute des clients</div>
@@ -91,6 +92,7 @@
                 <div>Optimiste</div>
                 <div>Motivée</div>
                 <div>Dynamique</div>
+            
 
             <!-- Languages section with competences-->
                 <h3 class="mt-4 text-color-blue">Langues</h3>
@@ -101,13 +103,14 @@
             <!-- Hobbies section -->
                 <h3 class="mt-4 text-color-blue">Loisirs</h3>
                 <p>Randonnée, natation, photographie, peinture</p>
+            </div>
         </div>
 
         <!-- Center Column-->
-        <div class="col-1 blue-line p-0"></div>
+        <div class="d-none d-xs-none d-sm-none d-md-none d-lg-block col-lg-1 blue-line"></div>
 
         <!-- Right Column -->
-        <div class="col-8 p-0">
+        <div class="col-md-7 col-sm-12">
 
             <!-- Professionnal competences section -->
                 <h2 class="text-color-blue">Compétences professionnelles</h2>
@@ -129,30 +132,30 @@
                 <h2 class="text-color-blue mt-4">Expériences professionnelles</h2>
 
                 <div class="row">
-                    <div class="col-3 fw-bold text-color-blue">2009-2013</div>
-                    <div class="col-9 fw-bold">Vendeuse assistante de direction</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">Bijouterie-horlogerie "ORO VIVO Suisse" GE</div>
+                    <div class="col-md-3 col-sm-12 fw-bold text-color-blue">2009-2013</div>
+                    <div class="col-md-9 col-sm-12 fw-bold">Vendeuse assistante de direction</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">Bijouterie-horlogerie "ORO VIVO Suisse" GE</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">2007-2008</div>
-                    <div class="col-9 fw-bold mt-3">Web-Design, BD, Programmation</div>
-                    <div class="col-3"></div>
-                    <div class="col-8">ONG "Mandat International" GE Suisse</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">2007-2008</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">Web-Design, BD, Programmation</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">ONG "Mandat International" GE Suisse</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">2007</div>
-                    <div class="col-9 fw-bold mt-3">Web-design, BD, Programmation, Programmation (3 mois)</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">ONG "Femmes Africa Solidarité" GE Suisse</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">2007</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">Web-design, BD, Programmation, Programmation (3 mois)</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">ONG "Femmes Africa Solidarité" GE Suisse</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">2000-2002</div>
-                    <div class="col-9 fw-bold mt-3">Gestionnaire</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">Bijouterie "Dari" St-Pétersbourg, Russie</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">2000-2002</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">Gestionnaire</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">Bijouterie "Dari" St-Pétersbourg, Russie</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">1998-2000</div>
-                    <div class="col-9 fw-bold mt-3">Gestionnaire</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">Agence immobilière "Avocat" St-Pétersbourg, Russie</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">1998-2000</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">Gestionnaire</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">Agence immobilière "Avocat" St-Pétersbourg, Russie</div>
                 </div>
 
 
@@ -160,23 +163,23 @@
                 <h2 class="text-color-blue mt-4">Formations</h2>
 
                 <div class="row">
-                    <div class="col-3 fw-bold text-color-blue">2023</div>
-                    <div class="col-9 fw-bold">Réalise, Genève, Suisse</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">Formation en Développement web</div>
+                    <div class="col-md-3 col-sm-12 fw-bold text-color-blue">2023</div>
+                    <div class="col-md-9 col-sm-12 fw-bold">Réalise, Genève, Suisse</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">Formation en Développement web</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">2007</div>
-                    <div class="col-9 fw-bold mt-3">ECDL Start Certificat, Genève, Suisse</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">2007</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">ECDL Start Certificat, Genève, Suisse</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">2002-2005</div>
-                    <div class="col-9 fw-bold mt-3">Migros Genève, Suisse</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">Cours de Français</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">2002-2005</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">Migros Genève, Suisse</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">Cours de Français</div>
 
-                    <div class="col-3 mt-3 fw-bold text-color-blue">1996-2002</div>
-                    <div class="col-9 fw-bold mt-3">Université de Saint-Pétersbourg, Russie</div>
-                    <div class="col-3"></div>
-                    <div class="col-9">Diplôme de programmeuse-mathématique</div>
+                    <div class="col-md-3 col-sm-12 mt-3 fw-bold text-color-blue">1996-2002</div>
+                    <div class="col-md-9 col-sm-12 fw-bold mt-md-3">Université de Saint-Pétersbourg, Russie</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9 col-sm-12">Diplôme de programmeuse-mathématique</div>
                 </div>
         </div>
     </div>
